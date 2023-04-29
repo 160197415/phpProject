@@ -49,10 +49,13 @@ function passwordMatch($password,$passwordRepeat)
     return $result;
 }
 
-function userNameAlreadyExists($conn, $userName, $userEmail){
+function userNameAlreadyExists($conn, $userName, $userEmail)
+{
     $sql = "SELECT * FROM user_table WHERE UserName = ? OR UserEmail =?;" ;
 
     $stmt = mysqli_stmt_init($conn);
+
+    
 
     if (!mysqli_stmt_prepare($stmt,$sql)){
         header("location: ../signup.php?error=stmtfailed");
@@ -103,3 +106,43 @@ function createUser($conn,$userName,$userEmail,$password){
 
 } 
 
+function emptyInputLogin($userName,$password)
+{
+    global $result;
+    
+    if (empty($userName) || empty($password)) {
+      $result = true;  
+    } else {
+        $result = false;
+    }
+    return $result;
+}
+
+function loginUser($conn,$userName,$password){
+
+    
+    $userNameExists = userNameAlreadyExists($conn,$userName, $password);
+
+    if($userNameExists === false){
+        header("location: ../login.php?error=emptyinput");
+        exit();
+    }
+
+    $passwordHashed = $userNameExists["Password"];
+    $checkPassword = password_verify($password,$passwordHashed);
+
+    if ($checkPassword === false) {
+        header("location: ../login.php?error=wronglogin");
+        exit();
+    } 
+
+    else if ($checkPassword === true){
+        
+        session_start();
+
+        $_SESSION["userid"] = $userNameExists["UserID"];
+        $_SESSION["userName"] = $userNameExists["UserName"];
+        header("location: ../index.php");
+        exit();
+    }
+}

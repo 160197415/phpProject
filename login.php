@@ -9,12 +9,28 @@ include_once 'header.php';
 
         <input type="text" name="userName" placeholder="Username">
 
-        <input type="text" name="password" placeholder="Password">
+        <input type="password" name="password" placeholder="Password">
 
         <button type="submit" name="submit">Log In</button>
 
     </form>
     
+
+    <?php
+      if (isset($_GET["error"])) {
+        if ($_GET["error"] == "emptyinput") {
+             echo "<p>Fill out the required fields please!</p>";   
+        }
+      }      
+
+      if (isset($_GET["error"])) {
+        if ($_GET["error"] == "wronglogin") {
+             echo "<p>Incorrect Login Information!</p>";   
+        }
+      }      
+        
+    
+    ?>
 </section>
 
 <?php

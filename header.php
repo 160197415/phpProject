@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,10 +14,19 @@
         <a href="index.php"></a>
 <ul>
   <li><a class="active" href="index.php">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="signUp.php">Sign Up</a></li>
-  <li><a href="login.php">Log In</a></li>
+  <?php
+
+  if (isset($_SESSION["userName"])){
+    echo "<li><a href='profile.php'>Profile Page</a></li>";
+    echo "<li><a href='logout.php'>Log Out</a></li>";
+  }
+
+  else {
+    echo "<li><a href='signup.php'>Sign Up</a></li>";
+    echo "<li><a href='login.php'>Log In</a></li>";
+
+  }
+?>
 </ul>
 </nav>
 </div>

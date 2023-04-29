@@ -22,7 +22,7 @@ include_once 'header.php';
     <?php
       if (isset($_GET["error"])) {
         if ($_GET["error"] == "emptyinput") {
-             echo "<p>Fill out the empty fields!</p>";   
+             echo "<p>Fill out the required fields!</p>";   
         }
       }      
 

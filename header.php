@@ -13,6 +13,7 @@
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="signUp.php">Sign Up</a></li>
+  <li><a href="login.php">Log In</a></li>
 </ul>
 </nav>
 </div>

@@ -18,6 +18,46 @@ include_once 'header.php';
         <button type="submit" name="submit">Sign Up</button>
 
     </form>
+
+    <?php
+      if (isset($_GET["error"])) {
+        if ($_GET["error"] == "emptyinput") {
+             echo "<p>Fill out the empty fields!</p>";   
+        }
+      }      
+
+      if (isset($_GET["error"])) {
+        if ($_GET["error"] == "invalidusername") {
+             echo "<p>Choose an appropriate username please!</p>";   
+        }
+      }      
+      if (isset($_GET["error"])) {
+        if ($_GET["error"] == "invalidemail") {
+             echo "<p>Choose an appropriate email please!</p>";   
+        }
+      }      
+      if (isset($_GET["error"])) {
+        if ($_GET["error"] == "passwordsdontmatch") {
+             echo "<p>Passwords do not match!</p>";   
+        }
+      }      
+      if (isset($_GET["error"])) {
+        if ($_GET["error"] == "stmtfailed") {
+             echo "<p>Something went wrong, try again!</p>";   
+        }
+      }      
+      if (isset($_GET["error"])) {
+        if ($_GET["error"] == "usernametaken") {
+             echo "<p>Sorry, Username taken!</p>";   
+        }
+      }      
+      if (isset($_GET["error"])) {
+        if ($_GET["error"] == "none") {
+             echo "<p>Congratulations on signing up!</p>";   
+        }
+      }      
+    
+    ?>
     
 </section>
 

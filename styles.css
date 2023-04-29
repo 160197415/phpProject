@@ -20,4 +20,14 @@ ul {
   
   li a:hover {
     background-color: #111;
+    
+  }
+
+  .center {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    width: 200px;
+  
+    padding: 10px;
   }

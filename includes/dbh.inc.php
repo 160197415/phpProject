@@ -1,4 +1,6 @@
 <?php 
+
+// dbh stands for database handler
 $HOSTNAME='localhost';
 $USERNAME='root';
 $PASSWORD='root';

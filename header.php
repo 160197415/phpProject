@@ -17,7 +17,7 @@ session_start();
   <?php
 
   if (isset($_SESSION["userName"])){
-    // echo "<li><a href='profile.php'>Profile Page</a></li>";
+    echo "<li><a href='profile.php'>Profile Page</a></li>";
     echo "<li><a href='includes/logout.inc.php'>Log Out</a></li>";
   }
 

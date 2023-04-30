@@ -6,7 +6,7 @@ include_once 'header.php';
 <?php
 
 if (isset($_SESSION["userName"])){
-  echo "<h1> welcome " . $_SESSION["userName"] . "</h1>";
+  echo "<h1>Welcome " . $_SESSION["userName"] . "</h1>";
 }
 
 ?>

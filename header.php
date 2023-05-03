@@ -13,8 +13,10 @@ session_start();
 <body>
 
 
-  <nav>
-
+  <nav class="grid-container">
+  <div> <img src="imgs/Original.png" alt="logo" class="logo"/></div>
+  <div></div>
+  <div>
 
     <ul>
       <li><a class="active" href="index.php">Home</a></li>
@@ -29,6 +31,7 @@ session_start();
       }
       ?>
     </ul>
+  </div>
   </nav>
 
 

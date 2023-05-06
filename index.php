@@ -34,7 +34,7 @@ if (isset($_SESSION["userName"])) {
 
 <div class="pimg2">
 <div class="ptext">
-  <span class="border">
+  <span class="border trans">
     Image two
   </span>
 </div>
@@ -51,7 +51,7 @@ if (isset($_SESSION["userName"])) {
 
 <div class="pimg3">
 <div class="ptext">
-  <span class="border">
+  <span class="border trans">
     Image Three
   </span>
 </div>

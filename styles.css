@@ -5,6 +5,7 @@ nav {
   opacity: 100%;
   background-color: #111;
   height: 50px;
+  z-index: 1;
 
 }
 
@@ -99,17 +100,18 @@ li a:hover {
 }
 
 
-.pimg1, .pimg2, .pimg3, .pimg4 {
+.pimg1, .pimg2, .pimg3 {
   position: relative;
   opacity: 70%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
 .pimg1 {
   background-image: url('./imgs/EngineeringCaps.jpg');
-  min-height: 100%;
+  min-height: 700px;
 
 }
 .pimg2 {
@@ -120,6 +122,47 @@ li a:hover {
   background-image: url('./imgs/engineeratnighstockphoto.jfif');
   min-height: 400px;
 }
+
+.section{
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light{
+  background-color: #f4f4f4;
+  color: #666;
+
+}
+
+.section-dark{
+  background-color: #282e34;
+  color: #ddd;
+
+}
+
+.ptext{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border{
+background-color: #111;
+color: white;
+padding: 20px;
+
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+
 /* .pimg4 {
   background-image: url('./imgs/workingtogether.png');
   min-height: 400px;

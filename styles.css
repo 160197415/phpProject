@@ -2,7 +2,7 @@ nav {
   position: sticky;
   top: 2px;
   display: grid;
-  
+  opacity: 100%;
   background-color: #111;
   height: 50px;
 
@@ -36,7 +36,7 @@ li {
   width: fit-content;
   font-size: 1rem bold;
   font-weight: 400;
- 
+
 }
 
 
@@ -75,3 +75,52 @@ li a:hover {
   -ms-flex-pack: start;
   /* justify-content: flex-start */
 }
+
+
+/* importing edits */
+
+.navbar-expand-lg {
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+
+/* css for index.php page */
+
+.body,html {
+  height: 100%;
+  margin: 0;
+  font-size: 19px;
+  font-family: "lato",sans-serif;
+  font-weight: 350;
+  line-height: 1.8em;
+  color: #666 ;
+}
+
+
+.pimg1, .pimg2, .pimg3, .pimg4 {
+  position: relative;
+  opacity: 70%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.pimg1 {
+  background-image: url('./imgs/EngineeringCaps.jpg');
+  min-height: 100%;
+
+}
+.pimg2 {
+  background-image: url('./imgs/engineertablestockphoto.jpg');
+  min-height: 400px;
+}
+.pimg3 {
+  background-image: url('./imgs/engineeratnighstockphoto.jfif');
+  min-height: 400px;
+}
+/* .pimg4 {
+  background-image: url('./imgs/workingtogether.png');
+  min-height: 400px;
+} */

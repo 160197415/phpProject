@@ -2,7 +2,7 @@
 include_once 'header.php';
 ?>
 
-<section class="signup-form center">
+<section class="login-form center">
     
     <h2>Sign Up</h2>
     <form action="includes/signup.inc.php" method="post">

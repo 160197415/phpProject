@@ -16,6 +16,14 @@ nav {
   padding: 10px;
 }
 
+.login-form
+{
+    margin-left: 41%;
+    margin-right: 40%;
+    width: 50%;
+    text-align: center;
+}
+
 .logo {
   height: 55px;
   width: fit-content;
@@ -56,9 +64,7 @@ li a:hover {
 }
 
 .center {
-  /* position: absolute; */
-  left: 50%;
-  right: 50%;
+  position: absolute;
   width: 200px;
   padding: 10px;
 }
@@ -89,7 +95,7 @@ li a:hover {
 
 /* css for index.php page */
 
-.body,html {
+.body, html {
   height: 100%;
   margin: 0;
   font-size: 19px;

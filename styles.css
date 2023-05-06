@@ -168,6 +168,11 @@ padding: 20px;
   background-color: transparent;
 }
 
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment: scroll;
+  }
+}
 
 /* .pimg4 {
   background-image: url('./imgs/workingtogether.png');

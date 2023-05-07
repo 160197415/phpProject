@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <nav class="grid-container">
+      <div class="grid-item">
+        <a href="index.php">
+          <img src="imgs/Original.png" alt="logo" class="logo"
+        /></a>
+      </div>
+
+      <div class="grid-item"></div>
+
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <!-- <div class="grid-item">
+        <a href="index.php"> <img src="imgs/Original.png" alt="logo" class="logo"/></a>
+      </div>
+      <div class="grid-item"></div>
+      <div class="grid-item">
+        <ul>
+          <li ><a class="active" href="about.php">About Us</a></li>
+          <?php
+  
+          // if (isset($_SESSION["userName"])) {
+          //   echo "<li><a href='news.php'>News</a></li>";
+          //   echo "<li><a href='projects.php'>Projects and Services</a></li>";
+          //   echo "<li><a href='includes/logout.inc.php'>Log Out</a></li>";
+          // } else {
+          //   echo "<li><a href='projects.php'>Projects and Services</a></li>";
+          //   echo "<li><a href='signup.php'>Sign Up</a></li>";
+          //   echo "<li><a href='login.php'>Log In</a></li>";
+          // }
+          ?>
+        </ul>
+      </div> -->
+    </nav>
+
+    <!-- INDEX -->
+
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="border"> Parallax Website </span>
+      </div>
+    </div>
+
+    <section class="section section-light">
+      <a href="#section-1">
+        <h2>section 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam tempore
+          nihil nemo consequatur est laudantium labore iure cupiditate deserunt
+          sunt, dolorem, ab dicta excepturi provident error non saepe? Libero
+          nisi illum rerum rem nulla quas est tenetur quo voluptas dolorum
+          voluptatem ipsum ipsam non natus molestias officia sed magni vero ut
+          asperiores quae, quos perspiciatis accusamus minus! Repellendus minima
+          tenetur minus? Debitis, expedita error ullam ipsum ipsam dolorum,
+          deserunt consequatur exercitationem, nobis cum veniam. Quisquam sunt
+          deserunt earum sit corporis quasi est eligendi delectus unde ipsum
+          rerum ipsam, architecto impedit ab voluptates a, magnam atque. Autem
+          dolores deleniti debitis corporis?
+        </p>
+      </a>
+    </section>
+
+    <div class="pimg2" id="pimg21">
+      <div class="ptext">
+        <span class="border trans"> Image two </span>
+      </div>
+    </div>
+
+    <section class="section section-light">
+      <h2>section 2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam tempore
+        nihil nemo consequatur est laudantium labore iure cupiditate deserunt
+        sunt, dolorem, ab dicta excepturi provident error non saepe? Libero nisi
+        illum rerum rem nulla quas est tenetur quo voluptas dolorum voluptatem
+        ipsum ipsam non natus molestias officia sed magni vero ut asperiores
+        quae, quos perspiciatis accusamus minus! Repellendus minima tenetur
+        minus? Debitis, expedita error ullam ipsum ipsam dolorum, deserunt
+        consequatur exercitationem, nobis cum veniam. Quisquam sunt deserunt
+        earum sit corporis quasi est eligendi delectus unde ipsum rerum ipsam,
+        architecto impedit ab voluptates a, magnam atque. Autem dolores deleniti
+        debitis corporis?
+      </p>
+    </section>
+
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans"> Image Three </span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2>section 3</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam tempore
+        nihil nemo consequatur est laudantium labore iure cupiditate deserunt
+        sunt, dolorem, ab dicta excepturi provident error non saepe? Libero nisi
+        illum rerum rem nulla quas est tenetur quo voluptas dolorum voluptatem
+        ipsum ipsam non natus molestias officia sed magni vero ut asperiores
+        quae, quos perspiciatis accusamus minus! Repellendus minima tenetur
+        minus? Debitis, expedita error ullam ipsum ipsam dolorum, deserunt
+        consequatur exercitationem, nobis cum veniam. Quisquam sunt deserunt
+        earum sit corporis quasi est eligendi delectus unde ipsum rerum ipsam,
+        architecto impedit ab voluptates a, magnam atque. Autem dolores deleniti
+        debitis corporis?
+      </p>
+    </section>
+
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="border"> Parallax </span>
+      </div>
+    </div>
+
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

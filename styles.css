@@ -1,19 +1,32 @@
+:root {
+  --navbarcolor: #01031df0;
+  --parallaxcolor: #01031df0;
+}
+
 nav {
   position: sticky;
-  top: 2px;
+  top: 0px;
   display: grid;
-  opacity: 100%;
-  background-color: #111;
-  height: 50px;
+  background-color: var(--navbarcolor); 
+  height: 70px;
   z-index: 1;
 
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 458px auto auto;
-  gap: 10px;
-  padding: 10px;
+  grid-template-columns: 458px auto 700px;
+  /* gap: 10px; */
+  /* padding: 10px; */
+}
+
+.grid-item {
+  height: 70px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .login-form
@@ -25,9 +38,12 @@ nav {
 }
 
 .logo {
-  height: 55px;
+  height: 60px;
   width: fit-content;
-
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 ul {
@@ -38,29 +54,29 @@ ul {
   display: flex;
   align-items: flex-end;
   justify-content: end;
-
+  height: 70px;
+  
 }
 
 li {
-  width: fit-content;
-  font-size: 1rem bold;
-  font-weight: 400;
-
+  /* width: fit-content; */
+  height: 70px;
 }
 
 
 li a {
   display: block;
   color: white;
+  padding: 17.1px;
+  width: 140px;
   text-align: center;
-  padding: 14px 16px;
+  
   text-decoration: none;
-  margin-bottom: -1px;
+  font-size: small;
 }
 
 li a:hover {
-  background-color: #333;
-
+  background-color: #021f3de6;
 }
 
 .center {
@@ -152,15 +168,16 @@ li a:hover {
   width: 100%;
   text-align: center;
   color: #000;
+  /* background-color: #01031df0; */
   font-size: 27px;
   letter-spacing: 8px;
   text-transform: uppercase;
 }
 
 .ptext .border{
-background-color: #111;
-color: white;
-padding: 20px;
+  background-color: var(--parallaxcolor);
+  color: white;
+  padding: 20px;
 
 }
 

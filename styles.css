@@ -7,17 +7,18 @@ nav {
   position: sticky;
   top: 0px;
   display: grid;
-  background-color: var(--navbarcolor); 
+  
+  background-color: var(--navbarcolor);
   height: 70px;
   z-index: 1;
+  overflow: hidden;
 
 }
 
 .grid-container {
-  display: grid;
+  
   grid-template-columns: 458px auto 700px;
-  /* gap: 10px; */
-  /* padding: 10px; */
+  
 }
 
 .grid-item {
@@ -26,15 +27,23 @@ nav {
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  
+
 }
 
-.login-form
-{
-    margin-left: 41%;
-    margin-right: 40%;
-    width: 50%;
-    text-align: center;
+.grid-item-nav {
+  height: 70px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.login-form {
+  margin-left: 41%;
+  margin-right: 40%;
+  width: 50%;
+  text-align: center;
 }
 
 .logo {
@@ -55,12 +64,14 @@ ul {
   align-items: flex-end;
   justify-content: end;
   height: 70px;
-  
+
 }
 
 li {
   /* width: fit-content; */
   height: 70px;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -70,13 +81,17 @@ li a {
   padding: 17.1px;
   width: 140px;
   text-align: center;
-  
   text-decoration: none;
   font-size: small;
+
 }
 
-li a:hover {
+
+
+li:hover {
   background-color: #021f3de6;
+   box-shadow: inset 0 0px -5px 0px #fff;
+  padding: 16px 16px 16px 16px;
 }
 
 .center {
@@ -85,44 +100,88 @@ li a:hover {
   padding: 10px;
 }
 
-.navbar-collapse {
-  display: -ms-flexbox !important;
-  /* display: flex !important; */
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto
+
+
+/* hamburger icon */
+
+.grid-item-nav .icon{
+  display: none;
+  
 }
 
-.navbar-expand {
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -ms-flex-pack: start;
-  /* justify-content: flex-start */
+@media screen and (max-width: 1200px) {
+  li a {display: none;
+    /* padding: 5px; */
+    height: 70px;
+    
+  }
+   li a.icon {
+    float: right;
+    display: block;
+    
+  }
+
+  .grid-item-nav .icon{
+    /* display: block; */
+    
+  }
 }
+
+@media screen and (max-width: 1200px) {
+  .grid-item-nav.responsive {position: relative;}
+  .grid-item-nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .grid-item-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    padding: 15px 0px !important;
+  }
+
+  .grid-item-nav.responsive ul{
+    background-color: var(--navbarcolor);
+  }
+
+  ul {
+    display: inline;
+    z-index: 100;
+    position: fixed;
+    height:auto;
+  }
+}
+
+
 
 
 /* importing edits */
 
-.navbar-expand-lg {
+/* .navbar-expand-lg {
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -ms-flex-pack: start;
   justify-content: flex-start
-}
+} */
 
 /* css for index.php page */
 
-.body, html {
+.body,
+html {
   height: 100%;
   margin: 0;
   font-size: 19px;
-  font-family: "lato",sans-serif;
+  font-family: "lato", sans-serif;
   font-weight: 350;
   line-height: 1.8em;
-  color: #666 ;
+  color: #666;
 }
 
 
-.pimg1, .pimg2, .pimg3 {
+.pimg1,
+.pimg2,
+.pimg3 {
   position: relative;
   opacity: 70%;
   background-position: center;
@@ -131,38 +190,41 @@ li a:hover {
   background-attachment: fixed;
 
 }
+
 .pimg1 {
   background-image: url('./imgs/EngineeringCaps.jpg');
   min-height: 700px;
 
 }
+
 .pimg2 {
   background-image: url('./imgs/engineertablestockphoto.jpg');
   min-height: 400px;
 }
+
 .pimg3 {
   background-image: url('./imgs/engineeratnighstockphoto.jfif');
   min-height: 400px;
 }
 
-.section{
+.section {
   text-align: center;
   padding: 50px 80px;
 }
 
-.section-light{
+.section-light {
   background-color: #f4f4f4;
   color: #666;
 
 }
 
-.section-dark{
+.section-dark {
   background-color: #282e34;
   color: #ddd;
 
 }
 
-.ptext{
+.ptext {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -174,7 +236,7 @@ li a:hover {
   text-transform: uppercase;
 }
 
-.ptext .border{
+.ptext .border {
   background-color: var(--parallaxcolor);
   color: white;
   padding: 20px;
@@ -185,8 +247,11 @@ li a:hover {
   background-color: transparent;
 }
 
-@media(max-width:568px){
-  .pimg1, .pimg2, .pimg3{
+@media(max-width:568px) {
+
+  .pimg1,
+  .pimg2,
+  .pimg3 {
     background-attachment: scroll;
   }
 }

@@ -21,17 +21,16 @@ session_start();
       <a href="index.php"><img src="imgs/Original.png" alt="logo" class="logo" /></a>
     </div>
     <div class="grid-item"></div>
-    <div class="grid-item-nav" id="myTopnav">
-      <ul>
-        <li><a href="javascript:void(0);" class="icon" onclick=myFunction()><i class="fa fa-bars"></i></a></li> 
+    <div class="grid-item-nav responsive" id="myTopnav">
+    
+      <ul class="show">
+      <li><a class="icon"><i class="fa fa-bars"></i></a></li>
         <li><a class="active" href="about.php">About Us</a></li>     
-        
         <?php
         if (isset($_SESSION["userName"])) {
           echo "<li><a href='news.php'>News</a></li>";
           echo "<li><a href='projects.php'>Projects and Services</a></li>";
-          echo "<li><a href='includes/logout.inc.php'>Log Out</a></li>";
-          
+          echo "<li><a href='includes/logout.inc.php'>Log Out</a></li>";  
         } else {
           echo "<li><a href='projects.php'>Projects and Services</a></li>";
           echo "<li><a href='signup.php'>Sign Up</a></li>";

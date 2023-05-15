@@ -3,6 +3,27 @@
   --parallaxcolor: #01031df0;
 }
 
+
+/* css for index.php page */
+
+.body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "lato", sans-serif;
+  font-weight: 350;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.center {
+  position: relative;
+  width: 200px;
+  padding: 10px;
+}
+
+
 nav {
   position: sticky;
   top: 0px;
@@ -17,25 +38,23 @@ nav {
 
 .grid-container {
   
-  grid-template-columns: 458px auto 700px;
+  grid-template-columns: 36% 8% 20%;
+  
   
 }
 
 .grid-item {
   height: 70px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin-right: 10px;
 
 }
 
 .grid-item-nav {
-  height: 70px;
+  height: 69px;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
-  margin-right: auto;
+ 
 
 }
 
@@ -61,122 +80,63 @@ ul {
   padding: 0px;
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
-  justify-content: end;
-  height: 70px;
-
+  align-items: center;
+  height: 70px; 
 }
 
 li {
   /* width: fit-content; */
-  height: 70px;
+  height: 68px;
   display: flex;
   align-items: center;
+  
 }
 
 
 li a {
   display: block;
   color: white;
-  padding: 17.1px;
+  padding: 16.1px;
   width: 140px;
   text-align: center;
   text-decoration: none;
   font-size: small;
-
 }
-
 
 
 li:hover {
   background-color: #021f3de6;
-   box-shadow: inset 0 0px -5px 0px #fff;
-  padding: 16px 16px 16px 16px;
+  border-bottom: solid 5px #ddd;  
+  transition: transform 250ms ease-in-out;
 }
-
-.center {
-  position: absolute;
-  width: 200px;
-  padding: 10px;
-}
-
 
 
 /* hamburger icon */
-
-.grid-item-nav .icon{
+.grid-item-nav .icon {
   display: none;
-  
+  position: absolute;
+
 }
 
+
 @media screen and (max-width: 1200px) {
-  li a {display: none;
-    /* padding: 5px; */
-    height: 70px;
+
+  .grid-container {
+  
+    grid-template-columns: 40% 20% 30%;
+    
     
   }
-   li a.icon {
-    float: right;
-    display: block;
-    
-  }
+  
+  ul li:not(:first-child) {display: none;}
 
   .grid-item-nav .icon{
-    /* display: block; */
-    
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .grid-item-nav.responsive {position: relative;}
-  .grid-item-nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .grid-item-nav.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
-    padding: 15px 0px !important;
-  }
-
-  .grid-item-nav.responsive ul{
-    background-color: var(--navbarcolor);
-  }
-
-  ul {
     display: inline;
-    z-index: 100;
-    position: fixed;
-    height:auto;
+    color: #ddd;
+    position: relative;
   }
-}
-
-
-
-
-/* importing edits */
-
-/* .navbar-expand-lg {
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -ms-flex-pack: start;
-  justify-content: flex-start
-} */
-
-/* css for index.php page */
-
-.body,
-html {
-  height: 100%;
-  margin: 0;
-  font-size: 19px;
-  font-family: "lato", sans-serif;
-  font-weight: 350;
-  line-height: 1.8em;
-  color: #666;
-}
+  
+  }
 
 
 .pimg1,

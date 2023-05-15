@@ -21,9 +21,9 @@ session_start();
       <a href="index.php"><img src="imgs/Original.png" alt="logo" class="logo" /></a>
     </div>
     <div class="grid-item"></div>
-    <div class="grid-item-nav responsive" id="myTopnav">
+    <div class="grid-item-nav" id="myTopnav">
     
-      <ul class="show">
+      <ul>
       <li><a class="icon"><i class="fa fa-bars"></i></a></li>
         <li><a class="active" href="about.php">About Us</a></li>     
         <?php

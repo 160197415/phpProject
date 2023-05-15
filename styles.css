@@ -13,47 +13,53 @@ html {
   font-size: 16px;
   font-family: "lato", sans-serif;
   font-weight: 350;
-  line-height: 1.8em;
+  line-height: 1;
   color: #666;
+  display: block;
 }
 
-.center {
-  position: relative;
-  width: 200px;
-  padding: 10px;
+
+h1{
+  margin: 10px;
+  text-align: center;
+  padding: 15px;
+  background: #0f0a0a63;
+  color: wheat;
 }
 
 
 nav {
   position: sticky;
   top: 0px;
-  display: grid;
+  
   
   background-color: var(--navbarcolor);
   height: 70px;
   z-index: 1;
-  overflow: hidden;
+  overflow: visible;
 
 }
 
 .grid-container {
   
-  grid-template-columns: 36% 8% 20%;
-  
+  grid-template-columns: 520px 700px;
+  display: block;
+  height: 68px;
   
 }
 
 .grid-item {
-  height: 70px;
-  margin-right: 10px;
+  height: 69px;
+  width: fit-content;
+  float: left;
+  
 
 }
 
 .grid-item-nav {
-  height: 69px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
+  height: fit-content;
+  width: fit-content;
+  float: right;
  
 
 }
@@ -61,8 +67,14 @@ nav {
 .login-form {
   margin-left: 41%;
   margin-right: 40%;
-  width: 50%;
+  width: 200px;
   text-align: center;
+}
+
+.center {
+  position: absolute;
+  width: 200px;
+  padding: 10px;
 }
 
 .logo {
@@ -77,34 +89,34 @@ nav {
 ul {
   list-style-type: none;
   margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  height: 70px; 
+  overflow: visible;
+  display: block; 
 }
 
-li {
-  /* width: fit-content; */
-  height: 68px;
-  display: flex;
-  align-items: center;
-  
+ul li {
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  padding-left: 16.3px;
+  padding-right: 16.3px;
+  padding-top: 20.1px;
+  padding-bottom: 18.1px;
 }
 
 
-li a {
+
+
+ul li:not(:first-child) a {
   display: block;
   color: white;
-  padding: 16.1px;
   width: 140px;
   text-align: center;
   text-decoration: none;
-  font-size: small;
+  font-size: medium;
 }
 
 
-li:hover {
+ul li:not(:first-child):hover {
   background-color: #021f3de6;
   border-bottom: solid 5px #ddd;  
   transition: transform 250ms ease-in-out;
@@ -114,8 +126,12 @@ li:hover {
 /* hamburger icon */
 .grid-item-nav .icon {
   display: none;
-  position: absolute;
+  
 
+}
+.grid-item-nav .icon:hover {
+  
+background-color: var(--parallaxcolor)
 }
 
 
@@ -123,20 +139,73 @@ li:hover {
 
   .grid-container {
   
-    grid-template-columns: 40% 20% 30%;
+    grid-template-columns: 50% 50%;
     
     
+  }
+
+  .grid-item-nav {
+    height: 69px;
+    width: 170px;
+    
+   
+  
+  }
+
+  ul li {
+    width: fit-content;
+    height: fit-content;
+    padding-left: 16.3px;
+    padding-right: 16.3px;
+    margin-bottom: 30px;
+    display: block;
+    padding-top: 20.1px;
+    padding-bottom: 18.1px;
+    font-size: large;
   }
   
   ul li:not(:first-child) {display: none;}
 
   .grid-item-nav .icon{
-    display: inline;
+    
+    
     color: #ddd;
-    position: relative;
+    position: absolute;
+    width: fit-content;
+    display: block;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+      
   }
   
+  
+
+  @media screen and (max-width: 1200px) {
+
+  .grid-item-nav.responsive ul li:not(:first-child) {
+    
+        float: right;
+        display: block;
+        background-color: #01031df0;
+        margin-block: 1px;
+    }
   }
+  .grid-item-nav.responsive ul a:not(:first-child) {
+    /* float: left; */
+    display: flex;
+    color: #f2f2f2;
+    /* align-items: center; */
+    padding: 14px 16px;
+    
+    font-size: 17px;
+  }
+    
+
+  
 
 
 .pimg1,

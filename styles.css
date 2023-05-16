@@ -134,6 +134,21 @@ ul li:not(:first-child):hover {
 background-color: var(--parallaxcolor)
 }
 
+.loginButton{
+  
+    margin: 10px;
+    padding: 7px;
+    font-size: 15px;
+
+}
+
+.loginInput{
+  
+    padding: 5px;
+    margin: 5px;
+
+}
+
 
 @media screen and (max-width: 1200px) {
 

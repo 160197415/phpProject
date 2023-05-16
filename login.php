@@ -8,11 +8,11 @@ include_once 'header.php';
   
   <form action="includes/login.inc.php" method="post">
 
-    <input type="text" name="userName" placeholder="Username">
+    <input type="text" class="loginInput" name="userName" placeholder="Username">
 
-    <input type="password" name="password" placeholder="Password">
+    <input type="password" class="loginInput" name="password" placeholder="Password">
 
-    <button type="submit" name="submit">Log In</button>
+    <button type="submit" class="loginButton" name="submit">Log In</button>
 
   </form>
 

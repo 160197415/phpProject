@@ -7,15 +7,15 @@ include_once 'header.php';
     <h2>Sign Up</h2>
     <form action="includes/signup.inc.php" method="post">
 
-        <input type="text" name="userName" placeholder="Username">
+        <input type="text" class="loginInput" name="userName" placeholder="Username">
 
-        <input type="text" name="userEmail" placeholder="Email">
+        <input type="text" class="loginInput" name="userEmail" placeholder="Email">
 
-        <input type="password" name="password" placeholder="Password">
+        <input type="password" class="loginInput" name="password" placeholder="Password">
 
-        <input type="password" name="passwordRepeat" placeholder="Repeat Password"> 
+        <input type="password" class="loginInput" name="passwordRepeat" placeholder="Repeat Password"> 
 
-        <button type="submit" name="submit">Sign Up</button>
+        <button type="submit" class="loginButton" name="submit">Sign Up</button>
 
     </form>
 
